@@ -32,6 +32,7 @@ def pwned_api_check(password):
     return get_password_leaks_count(responce, tail)
 
 
+    
 def main(args):
     for password in args:
         count = pwned_api_check(password)
@@ -41,5 +42,10 @@ def main(args):
             print(f"{password} was not found. Carry on!")
     return "done"
 
+with open("./passwords.txt", "r") as file:
+    lines = file.readlines()
+    lines = [line.rstrip("\n") for line in lines]
 
-main(sys.argv[1:])
+    if __name__ == "__main__":
+        #sys.exit(main(sys.argv[1:]))
+        sys.exit(main(lines))
