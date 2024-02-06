@@ -4,9 +4,9 @@ from outils.more_outils.item import buy
 from utility import multiply, divide
 
 
-import random 
+import random
 # dir shows all the methods of its parameter
-#print(dir(random))
+# print(dir(random))
 
 # this is another way of doing it but its not recommended
 # from outils.more_outils import *
@@ -16,9 +16,8 @@ import random
 # print(outils.more_outils.item.buy("course"))
 
 
-
 if __name__ == '__main__':
     print(multiply(3, 4))
     print(buy("course"))
     print(__name__)
-    print("run this")
+    print("run this now")
