@@ -36,14 +36,6 @@ def write_to_file(data):
 
 
 def write_to_csv(data):
-    with open("data.txt", "a") as database:
-        email = data["email"]
-        name = data["name"]
-        message = data["message"]
-        database.write(f"name:{name} , email:{email} , message:{message}\n")
-
-
-def write_to_csv(data):
     with open("data.csv", newline='', mode="a") as database2:
         email = data["email"]
         name = data["name"]
