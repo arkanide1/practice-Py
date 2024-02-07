@@ -39,3 +39,5 @@ elem.send_keys(Keys.RETURN)
 assert "No results found." not in driver.page_source
 input("Press Enter to close the browser...")
 driver.close()
+driver.close()
+# auit method close the entire browser
